@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static Webpages - Premium Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Final.css"/>
+</head>
+<body>
+  <!-- Particles background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Enhanced Navbar -->
+  <nav class="glass-nav p-6 flex justify-between items-center sticky top-0 z-50">
+    <div class="flex space-x-8 items-center">
+      <span class="font-bold text-2xl text-white">✨ My Webpages</span>
+      <a href="#" class="nav-link text-white hover:text-purple-200 font-semibold">Static Webpages</a>
+      <a href="#" class="nav-link text-gray-200 hover:text-white transition-colors">Responsive Webpages</a>
+      <a href="#" class="nav-link text-gray-200 hover:text-white transition-colors">Dynamic Webpages</a>
+    </div>
+    <div>
+      <div class="avatar w-12 h-12 rounded-full"></div>
+    </div>
+  </nav>
+
+  <!-- Enhanced Page Heading -->
+  <div class="text-center my-12 px-4">
+    <h1 class="main-heading mb-8">Static Webpages</h1>
+    <button id="toggleBtn" onclick="toggleView()" class="premium-btn">
+      <span>View All</span>
+    </button>
+  </div>
+
+  <!-- Enhanced Rotating Container -->
+  <div id="carousel-wrapper" class="carousel-container relative max-w-7xl mx-auto px-4">
+    <div id="carousel" class="carousel"></div>
+    <!-- Enhanced Controls -->
+    <div class="absolute top-1/2 left-8 transform -translate-y-1/2 z-50">
+      <button onclick="prevSlide()" class="control-btn">‹</button>
+    </div>
+    <div class="absolute top-1/2 right-8 transform -translate-y-1/2 z-50">
+      <button onclick="nextSlide()" class="control-btn">›</button>
+    </div>
+  </div>
+
+  <!-- Enhanced Full Grid View -->
+  <div id="full-view" class="hidden-view max-w-7xl mx-auto px-6 py-12 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-view">
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/3.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/4.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/5_1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/5_2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/6_1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/6_2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/7_1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/7_2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/8.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/9_1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/9_2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/10_1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/10_2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/11.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/12.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingPractices/13.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/1_1.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/1_2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/2.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/3.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/4.html"></iframe></div>
+    <div class="iframe-box"><iframe title="somth" src="Notes/tourism.html"></iframe></div>
+  </div>
+
+  <script src="Final.js">
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png");
+    padding: 25px;
+    color: white;
+    font-family: "Roboto";
+    background-size: cover;
+    height: 100vh;
+}
+
+.small-container {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.main-heading {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: white;
+    color: #ff8348;
+    margin-left: 20px;
+    font-size: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 8px;
+    height: 36px;
+}
+
+.description-container {
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 12px;
+}
+
+.side-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.image {
+    margin-right: 10px;
+}

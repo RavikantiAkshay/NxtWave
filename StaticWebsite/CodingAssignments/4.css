@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.home-bg-container {
+    background-color: #225db0;
+    height: 100vh;
+    font-family: "Roboto";
+    padding: 30px 20px;
+}
+
+.home-top-heading {
+    font-size: 30px;
+    color: white;
+}
+
+.home-top-description {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.home-card {
+    text-align: center;
+    background-color: white;
+    width: 130px;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+    color: #1f2933;
+}
+
+.home-card-image {
+    height: 30px;
+    margin: 5px;
+}
+
+.bg-container {
+    color: white;
+    background-color: #225db0;
+    height: 100vh;
+    font-family: "Roboto";
+    padding: 20px;
+}
+
+.carousel-container {
+    margin-bottom: 20px;
+}
+
+.tech-heading {
+    font-size: 24px;
+}
+
+.tech-list {
+    margin-top: 20px;
+}
+
+.tech-list-item {
+    margin: 15px 0px;
+}
+
+.button-container {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #225db0;
+}
+
+.tech-button {
+    background-color: #225db0;
+    border-color: white;
+    color: white;
+}

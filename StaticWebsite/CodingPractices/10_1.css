@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    background-color: #875fc0;
+    font-family: "Roboto";
+}
+
+.top-score {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.card-container {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.card-image {
+    width: 60vw;
+}
+
+.card-main-heading {
+    font-size: 24px;
+    color: #323f4b;
+}
+
+.card-description {
+    color: #323f4b;
+}
+
+.quiz-container {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #fbaf00;
+    color: white;
+}
+
+.list-item {
+    list-style-type: None;
+    border: 1px solid;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    color: #323f4b;
+}
+
+.list-item-special {
+    background-color: #875fc0;
+    color: white;
+    border: 1px solid black;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}

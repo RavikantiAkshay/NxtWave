@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-bg-container {
+    font-family: "Bree Serif";
+    background-image: url("https://new-assets.ccbp.in/frontend/static-website/moon-stars-bg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-text-container {
+    color: white;
+    text-align: center;
+    padding: 70px 10px;
+}
+
+.home-text-description {
+    font-size: 12px;
+}
+
+.home-text-heading {
+    font-size: 24px;
+}
+
+.home-bottom-container {
+    color: white;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.home-image-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-bg.png");
+    background-size: cover;
+    padding: 60px 0px;
+    color: #ffe7bf;
+}
+
+.home-image {
+    height: 200px;
+    width: 200px;
+}
+
+.home-button {
+    background-color: #8e97fd;
+    border-radius: 20px;
+    color: white;
+}
+
+.music-bg-container {
+    font-family: "Bree Serif";
+    height: 100vh;
+    background-color: #03174c;
+}
+
+.music-top-image {
+    height: 36vh;
+    width: 100vw;
+}
+
+.music-text-container,
+.music-card-container {
+    margin: 15px;
+}
+
+.music-text-heading {
+    color: white;
+    font-size: 24px;
+}
+
+.music-text-description {
+    color: #98a1bd;
+    font-size: 12px;
+}
+
+.music-text-duration {
+    color: #98a1bd;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.music-text-related {
+    font-size: 18px;
+    color: white;
+}
+
+.music-card {
+    margin-right: 10px;
+}
+
+.music-card-description {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.music-card-image {
+    height: 100px;
+}
+
+.music-button {
+    background-color: #8e97fd;
+    border-radius: 20px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 3px 30px;
+}
+
+.music-card-container {
+    margin-bottom: 0px;
+}

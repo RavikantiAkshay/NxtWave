@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-bg-container {
+    background-color: #1b1b1b;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    font-family: "Bree Serif";
+}
+
+.bg-container {
+    background-color: #1b1b1b;
+    color: white;
+    height: 100vh;
+    font-family: "Bree Serif";
+}
+
+.home-top-heading {
+    font-size: 30px;
+}
+
+.home-top-image {
+    height: 190px;
+    width: 140px;
+}
+
+.home-top-card-container {
+    background-color: #e6f6ff;
+    border-radius: 10px;
+}
+
+.home-top-title {
+    color: #183b56;
+    margin-bottom: 5px;
+}
+
+.home-top-name {
+    color: #183b56;
+    font-size: 10px;
+}
+
+.home-top-description {
+    color: #06070d;
+    font-size: 13px;
+}
+
+.home-top-text-container {
+    padding: 15px;
+}
+
+.home-button {
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.home-bottom-heading {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.home-bottom-card-container {
+    margin: 10px 0px;
+}
+
+.home-bottom-image {
+    height: 140px;
+}
+
+.home-bottom-title {
+    margin-bottom: 10px;
+}
+
+.home-bottom-name {
+    color: #e4e7eb;
+    font-size: 12px;
+}
+
+.home-bottom-description {
+    color: #e4e7eb;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.home-bottom-text-container {
+    padding: 0px 15px;
+}
+
+.top-card {
+    text-align: center;
+}
+
+.card-image {
+    height: 50vh;
+    margin: 20px 30px;
+}
+
+.card-heading {
+    font-size: 28px;
+}
+
+.card-name {
+    font-size: 12px;
+    color: #9aa5b1;
+}
+
+.text-container {
+    color: #e4e7eb;
+    margin: 0px 20px;
+    font-size: 12px;
+}
+
+.button-container {
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.button-element {
+    font-size: 15px;
+    margin-bottom: 20px;
+}

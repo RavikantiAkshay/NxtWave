@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.product1 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+.product2 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+.text-heading {
+    font-weight: normal;
+}
+
+.text-button {
+    color: white;
+    background-color: transparent;
+    padding: 5px 25px;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.bottom-button {
+    background-color: #1754a1;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}

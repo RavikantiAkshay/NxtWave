@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-bg-container {
+    font-family: "Bree Serif";
+}
+
+.home-top-image {
+    height: 35vh;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.home-top-container {
+    text-align: center;
+}
+
+.home-top-heading {
+    font-size: 20px;
+    color: #183b56;
+}
+
+.home-top-description {
+    font-size: 12px;
+    color: #616e7c;
+}
+
+.home-bottom-container {
+    margin: 0px 20px;
+}
+
+.home-bottom-image {
+    height: 80px;
+    margin: 5px;
+}
+
+.first-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.first-card-container {
+    color: white;
+    background-color: white;
+    font-family: "Roboto";
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.first-button1 {
+    background-color: white;
+    color: #171f46;
+    border: 1px solid #d7dfe9;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.first-main-heading {
+    color: #5752ab;
+    font-family: "Bree Serif";
+    font-size: 24px;
+}
+
+.first-description {
+    color: #323f4b;
+    font-size: 15px;
+}
+
+.diwali-top-section {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png");
+    height: 30vh;
+    background-size: cover;
+}
+
+.diwali-top-section-heading {
+    color: white;
+    font-family: "Caveat";
+    font-size: 36px;
+    width: 200px;
+    padding: 20px;
+}
+
+.diwali-bottom-section {
+    text-align: center;
+    background-color: #e6f6ff;
+    padding: 15px;
+}
+
+.diwali-card-item {
+    text-align: center;
+    background-color: white;
+    width: 140px;
+    border-radius: 9px;
+    padding: 16px;
+    margin: 15px;
+}
+
+.diwali-card-image {
+    height: 64px;
+    width: 64px;
+}
+
+.diwali-card-name {
+    color: #616e7c;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.diwali-card-price {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.third-tomato {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/foodbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.third-card {
+    background-color: #f6c56e;
+    font-family: "Roboto";
+    color: #323f4b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 25px;
+    border: none;
+}
+
+.third-button {
+    background-color: white;
+    width: 120px;
+    font-size: 13px;
+    border-radius: 7px;
+    padding: 7.5px 25px;
+    margin-right: 10px;
+}
+
+.third-potatoHeading {
+    font-family: "Bree Serif";
+    font-size: 30px;
+}
+
+.third-para {
+    font-weight: bold;
+}
+
+.fourth-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/newsbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.fourth-card-container {
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fourth-card-title {
+    color: #7b8794;
+    font-size: 12px;
+}
+
+
+.fourth-card-description {
+    color: #7b8794;
+    font-size: 11px;
+}
+
+.fourth-card-heading {
+    color: #323f4b;
+    font-size: 20px;
+}
+
+.fourth-card-button {
+    background-color: #323f4b;
+    color: white;
+    border-radius: 8px;
+    font-size: 10px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin-right: 10px;
+}
+
+.fourth-button {
+    color: white;
+    border-radius: 8px;
+    font-size: 10px;
+    height: 30px;
+    border: none;
+}

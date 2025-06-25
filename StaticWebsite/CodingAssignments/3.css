@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.home-bg-container {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/flats-list-bg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-card {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.home-heading {
+    color: #f19116;
+    font-size: 20px;
+    font-family: "Bree Serif";
+}
+
+.home-description {
+    color: #7b8794;
+    font-size: 12px;
+    font-family: "Bree Serif";
+}
+
+.home-button {
+    background-color: #f19116;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.list-bg-container {
+    background-color: #222222;
+    padding: 20px 15px;
+    height: 100vh;
+}
+
+.list-card {
+    background-color: white;
+    font-family: "Bree Serif";
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+
+.list-card-image {
+    width: 75px;
+    height: 160px;
+}
+
+.list-text-container {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.list-card-heading {
+    color: #0f0e46;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list-card-description {
+    font-size: 12px;
+    color: #6c6b70;
+}
+
+.list-button {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.top-image {
+    height: 40vh;
+    width: 100vw;
+}
+
+.bottom-container {
+    background-color: #222222;
+    height: 60vh;
+    padding: 20px;
+    font-family: "Bree Serif";
+}
+
+.bottom-price {
+    color: #f19116;
+    font-size: 20px;
+}
+
+.location-container {
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.bottom-image {
+    height: 20px;
+    margin-right: 10px;
+}
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.bottom-heading {
+    color: #f19116;
+    font-size: 20px;
+}
+
+.bottom-description {
+    color: white;
+    font-size: 12px;
+}
+
+.button-container {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.detailed-button {
+    margin: 10px;
+}

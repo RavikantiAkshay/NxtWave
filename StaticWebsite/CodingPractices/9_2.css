@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.conference-text-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.conference-image {
+    height: 50vh;
+    width: 100vw;
+}
+
+.conference-main-heading {
+    font-size: 30px;
+    color: #183b56;
+    font-weight: bold;
+}
+
+.conference-description {
+    padding-top: 10px;
+    color: #5a7184;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.details-text-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.details-card-container {
+    text-align: center;
+
+}
+
+.details-main-heading {
+    font-size: 20px;
+    color: #183b56;
+    font-weight: bold;
+}
+
+.details-description {
+    color: #5a7184;
+    font-weight: 400;
+}
+
+.top-one {
+    color: #183b56;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bottom-one {
+    color: #5a7184;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
