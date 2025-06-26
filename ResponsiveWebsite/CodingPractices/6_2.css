@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-.bg-container {
-    background-color: #f9fbfe;
+.kit-bg-container {
+  background-color: #f9fbfe;
 }
 
-.top-heading {
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: #1f2933;
+.kit-top-heading {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #1f2933;
 }
 
-.card-item {
-    text-align: center;
+
+.kit-card-item {
+  text-align: center;
 }
 
-.card-image {
-    width: 170px;
-    height: 200px;
+.kit-card-image {
+  width: 170px;
+  height: 200px;
 }
 
-.card-description {
-    color: #323f4b;
+.kit-card-description {
+  color: #323f4b;
 }

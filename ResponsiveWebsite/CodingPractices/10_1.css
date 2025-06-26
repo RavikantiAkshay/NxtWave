@@ -1,75 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.container {
-    background-color: #19232d;
-    height: 150vh;
-    padding-top: 30px;
-    color: #5a7184;
+.footer-container {
+  background-color: #19232d;
+  height: 150vh;
+  padding-top: 30px;
+  color: #5a7184;
+  font-family: "Roboto";
 }
 
-.main-logo {
-    height: 80px;
+.footer-main-logo {
+  height: 80px;
 }
 
-.top-container {
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-
-    margin-bottom: 10px;
+.footer-top-container {
+  padding: 50px;
+  margin-bottom: 10px;
 }
 
-.top-para {
-    font-size: 23px;
+.footer-top-para {
+  font-size: 23px;
 }
 
-.icon-background {
-    background-color: #202b36;
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
-    font-size: 35px;
-    text-align: center;
-    margin: 20px 5px;
+.footer-icon-background {
+  background-color: #202b36;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px 5px;
 }
 
-.bottom-heading {
-    font-weight: 600;
-    font-size: 30px;
-    margin: 20px;
+.footer-bottom-heading {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px;
 }
 
-.bottom-icon {
-    font-size: 35px;
-    margin: 15px 20px;
+.footer-bottom-icon {
+  font-size: 35px;
+  margin: 15px 20px;
 }
 
-.second-container {
-    color: #5a7184;
+.footer-second-container {
+  color: #5a7184;
 }
 
-.bottom-para {
-    font-size: 23px;
-    padding-top: 10px;
+.footer-bottom-para {
+  font-size: 23px;
+  padding-top: 10px;
 }
 
-.last-para {
-    font-size: 23px;
+.footer-last-heading {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px 0px;
 }
 
-.last-heading {
-    font-weight: 600;
-    font-size: 30px;
-    margin: 20px 0px;
+.footer-last-para {
+  font-size: 23px;
 }
 
-.bottom-line {
-    height: 2px;
-    background-color: #5a7184;
+.footer-bottom-line {
+  height: 2px;
+  background-color: #5a7184;
 }
 
-.end-para {
-    font-size: 23px;
-    color: #959ead;
-    margin-top: 10px;
+.footer-end-para {
+  font-size: 23px;
+  color: #959ead;
+  margin-top: 10px;
 }
