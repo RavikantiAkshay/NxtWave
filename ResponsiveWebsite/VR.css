@@ -28,7 +28,7 @@ html {
 
     /* Home Section */
     .home-bg-container {
-      background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+      background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
       background-size: cover;
       
       height: 100vh;
@@ -202,7 +202,7 @@ html {
 
     
 .products-product1 {
-  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
+  background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
   background-size: cover;
   height: 100vh;
   color: white;
@@ -210,7 +210,7 @@ html {
 }
 
 .products-product2 {
-  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
+  background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
   background-size: cover;
   height: 100vh;
   color: white;

@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 .container {
-    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-work-done-bg.png");
-    background-size: cover;
-    width: 100%;
-    color: white;
-    padding: 50px 0px;
+    background-image: linear-gradient(#f49541, #dd5d97);
 }
 
-hr {
-    width: 50%;
-    background-color: white;
+.top-image {
+    width: 100%;
+}
+
+.bottom-image {
+    width: 100%;
+}
+
+.last-image {
+    width: 100%;
+}
+
+.text-heading {
+    font-family: "bree serif";
+    color: #ad2167;
+}
+
+.text-para {
+    font-size: 28px;
+    color: white;
+}
+
+.style-text {
+    font-weight: bold;
+    font-style: italic;
 }
