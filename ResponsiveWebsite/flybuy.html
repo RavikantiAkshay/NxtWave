@@ -204,7 +204,7 @@
     </section>
 
     <section class="offers-section">
-        <div class="container offer-container">
+        <div class="container-fluid offer-container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-4 order-1 order-md-1">
                     <div class="text-container">
@@ -263,11 +263,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="deal-link">See All Deals
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                            </svg>
-                        </a>
+                        <div class="text-center">
+                            <a href="#" class="deal-link">See All Deals
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
@@ -310,11 +312,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="deal-link">View All
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                            </svg>
-                        </a>
+                        <div class="text-center">
+                            <a href="#" class="deal-link">View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -440,40 +444,5 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
-            
-            if ($(this).scrollTop() > 300) {
-                $('.back-to-top').addClass('active');
-            } else {
-                $('.back-to-top').removeClass('active');
-            }
-        });
-        
-        $('a[href*="#"]').on('click', function(e) {
-            e.preventDefault();
-            
-            $('html, body').animate(
-                {
-                    scrollTop: $($(this).attr('href')).offset().top - 70,
-                },
-                500,
-                'linear'
-            );
-        });
-        
-        $('.back-to-top').on('click', function() {
-            $('html, body').animate({scrollTop: 0}, '300');
-        });
-        
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
 </body>
 </html>

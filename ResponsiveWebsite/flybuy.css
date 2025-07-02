@@ -334,12 +334,12 @@
 
         .offer-text-heading {
             font-family: "bree serif";
-            color: #ad2167;
+            
         }
 
         .offer-text-para {
             font-size: 28px;
-            color: white;
+           
         }
 
         .offer-style-text {
@@ -773,3 +773,51 @@
                 font-size: 2rem;
             }
         }
+        .services-section {
+            background: linear-gradient(135deg, #fff1eb, #ace0f9);
+        }
+
+        .products-section {
+            background: linear-gradient(135deg, #ace0f9, #d6e0f0);
+        }
+
+        .deals-section {
+            background: linear-gradient(135deg, #d6e0f0, #fbeaff);
+        }
+
+        .blogs-section {
+            background: linear-gradient(135deg, #fbeaff, #e0c3fc);
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+        }
+        .offer-container {
+    background: linear-gradient(135deg, #f2d8ff, #d6e5fb);
+}
+.offer-text-heading {
+    color: #2e1a47; /* deep but not black */
+}
+
+.offer-text-para {
+    color: #3d2b50;
+}
+
+.offer-style-text {
+    color: #b64fc8; /* accent purple to stand out */
+}
+
+        
+        
+        .hero-section {
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .carousel-inner,
+        .carousel-inner img {
+            height: 100vh;
+            object-fit: cover;
+        }
+
