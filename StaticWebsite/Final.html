@@ -9,72 +9,119 @@
   <link rel="stylesheet" href="Final.css"/>
 </head>
 <body>
-  <!-- Particles background -->
-  <div class="particles" id="particles"></div>
+  
+    <div class="particles" id="particles"></div>
+    <nav class="glass-nav p-6 flex justify-between items-center sticky top-0 z-50">
+      <div class="flex space-x-8 items-center">
+        <span class="font-bold text-2xl text-white">✨ My Webpages</span>
+        <a href="#" class="nav-link text-white hover:text-purple-200 font-semibold">Static Webpages</a>
+        <a href="#" class="nav-link text-gray-200 hover:text-white transition-colors">Responsive Webpages</a>
+        <a href="#" class="nav-link text-gray-200 hover:text-white transition-colors">Dynamic Webpages</a>
+      </div>
+      <div>
+        <div class="avatar w-12 h-12 rounded-full"></div>
+      </div>
+    </nav>
 
-  <!-- Enhanced Navbar -->
-  <nav class="glass-nav p-6 flex justify-between items-center sticky top-0 z-50">
-    <div class="flex space-x-8 items-center">
-      <span class="font-bold text-2xl text-white">✨ My Webpages</span>
-      <a href="#" class="nav-link text-white hover:text-purple-200 font-semibold">Static Webpages</a>
-      <a href="#" class="nav-link text-gray-200 hover:text-white transition-colors">Responsive Webpages</a>
-      <a href="#" class="nav-link text-gray-200 hover:text-white transition-colors">Dynamic Webpages</a>
-    </div>
-    <div>
-      <div class="avatar w-12 h-12 rounded-full"></div>
-    </div>
-  </nav>
+    <div id="static-section">
+      <div class="text-center my-12 px-4">
+        <h1 class="main-heading mb-8">Static Webpages</h1>
+        <button id="toggleBtn" onclick="toggleView()" class="premium-btn">
+          <span>View All</span>
+        </button>
+      </div>
 
-  <!-- Enhanced Page Heading -->
-  <div class="text-center my-12 px-4">
-    <h1 class="main-heading mb-8">Static Webpages</h1>
-    <button id="toggleBtn" onclick="toggleView()" class="premium-btn">
-      <span>View All</span>
-    </button>
-  </div>
-
-  <!-- Enhanced Rotating Container -->
-  <div id="carousel-wrapper" class="carousel-container relative max-w-7xl mx-auto px-4">
-    <div id="carousel" class="carousel"></div>
-    <!-- Enhanced Controls -->
-    <div class="absolute top-1/2 left-8 transform -translate-y-1/2 z-50">
-      <button onclick="prevSlide()" class="control-btn">‹</button>
-    </div>
-    <div class="absolute top-1/2 right-8 transform -translate-y-1/2 z-50">
-      <button onclick="nextSlide()" class="control-btn">›</button>
-    </div>
-  </div>
-
-  <!-- Enhanced Full Grid View -->
-  <div id="full-view" class="hidden-view max-w-7xl mx-auto px-6 py-12 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-view">
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/3.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/4.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/5_1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/5_2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/6_1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/6_2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/7_1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/7_2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/8.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/9_1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/9_2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/10_1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/10_2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/11.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/12.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingPractices/13.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/1_1.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/1_2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/2.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/3.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="CodingAssignments/4.html"></iframe></div>
-    <div class="iframe-box"><iframe title="somth" src="Notes/tourism.html"></iframe></div>
-  </div>
-
-  <script src="Final.js">
+      <div id="carousel-wrapper" class="carousel-container relative max-w-7xl mx-auto px-4">
+        <div id="carousel" class="carousel"></div>
     
+        <div class="absolute top-1/2 left-8 transform -translate-y-1/2 z-50">
+          <button onclick="prevSlide()" class="control-btn">‹</button>
+        </div>
+        <div class="absolute top-1/2 right-8 transform -translate-y-1/2 z-50">
+          <button onclick="nextSlide()" class="control-btn">›</button>
+        </div>
+      </div>
+
+      <div id="full-view" class="hidden-view max-w-7xl mx-auto px-6 py-12 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-view">
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/3.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/4.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/5_1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/5_2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/6_1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/6_2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/7_1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/7_2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/8.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/9_1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/9_2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/10_1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/10_2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/11.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/12.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingPractices/13.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingAssignments/1_1.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingAssignments/1_2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingAssignments/2.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingAssignments/3.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="CodingAssignments/4.html"></iframe></div>
+        <div class="iframe-box"><iframe title="somth" src="Notes/tourism.html"></iframe></div>
+      </div>
+  </div>
+
+  <div id="responsive-section" class="hidden w-full h-screen flex flex-col">
+    <nav class="bg-gray-900 text-white px-6 py-4 flex justify-between items-center">
+      <div class="font-bold text-xl">Responsive Projects</div>
+      <div class="flex gap-4">
+        <a class="viewer-link font-bold underline" data-src="https://ravikantiakshay.github.io/NxtWave/ResponsiveWebsite/VR.html">VR</a>
+        <a class="viewer-link" data-src="NxtWave/ResponsiveWebsite/flybuy.html">FlyBuy</a>
+        <a class="viewer-link" data-src="https://ravikantiakshay.github.io/NxtWave/ResponsiveWebsite/Notes/FoodMunch.html">FoodMunch</a>
+      </div>
+    </nav>
+    <iframe id="responsive-viewer" src="https://ravikantiakshay.github.io/NxtWave/ResponsiveWebsite/VR.html" class="flex-grow"></iframe>
+  </div>
+
+
+  <script src="Final.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const staticSection = document.getElementById("static-section");
+      const responsiveSection = document.getElementById("responsive-section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const text = link.textContent.trim();
+
+          if (text === "Static Webpages") {
+            staticSection.classList.remove("hidden");
+            responsiveSection.classList.add("hidden");
+          } else if (text === "Responsive Webpages") {
+            staticSection.classList.add("hidden");
+            responsiveSection.classList.remove("hidden");
+          }
+          navLinks.forEach(l => l.classList.remove("text-purple-200", "font-semibold"));
+          link.classList.add("text-purple-200", "font-semibold");
+        });
+      });
+
+      const viewerLinks = document.querySelectorAll(".viewer-link");
+      const viewer = document.getElementById("responsive-viewer");
+
+      viewerLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          viewer.src = link.dataset.src;
+
+          viewerLinks.forEach(l => l.classList.remove("font-bold", "underline"));
+          link.classList.add("font-bold", "underline");
+        });
+      });
+    });
   </script>
+
 </body>
 </html>

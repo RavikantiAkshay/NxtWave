@@ -23,7 +23,6 @@
       z-index: -1;
     }
 
-    /* Glassmorphism navbar */
     .glass-nav {
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(20px);
@@ -31,14 +30,12 @@
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     }
 
-    /* Floating elements animation */
     @keyframes float {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       33% { transform: translateY(-10px) rotate(1deg); }
       66% { transform: translateY(5px) rotate(-1deg); }
     }
 
-    /* Carousel enhancements */
     .carousel-container {
       perspective: 1500px;
       transform-style: preserve-3d;
@@ -98,7 +95,6 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
 
-    /* Enhanced control buttons */
     .control-btn {
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(20px);
@@ -126,7 +122,6 @@
       transform: scale(0.95);
     }
 
-    /* Premium button styling */
     .premium-btn {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       border: none;
@@ -162,7 +157,6 @@
       box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
     }
 
-    /* Grid view enhancements */
     .hidden-view {
       display: none;
     }
@@ -192,7 +186,6 @@
       border: none;
     }
 
-    /* Staggered animation for grid items */
     .grid-view .iframe-box:nth-child(1) { animation-delay: 0.1s; }
     .grid-view .iframe-box:nth-child(2) { animation-delay: 0.2s; }
     .grid-view .iframe-box:nth-child(3) { animation-delay: 0.3s; }
@@ -210,7 +203,6 @@
       }
     }
 
-    /* Enhanced heading */
     .main-heading {
       background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
       -webkit-background-clip: text;
@@ -222,7 +214,6 @@
       animation: float 6s ease-in-out infinite;
     }
 
-    /* Navigation enhancements */
     .nav-link {
       position: relative;
       padding: 8px 16px;
@@ -251,14 +242,12 @@
       width: 80%;
     }
 
-    /* Avatar enhancement */
     .avatar {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
       animation: float 4s ease-in-out infinite;
       box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
     }
 
-    /* Particles effect */
     .particles {
       position: fixed;
       top: 0;
@@ -295,7 +284,6 @@
       }
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
       .carousel-item {
         width: 300px;
