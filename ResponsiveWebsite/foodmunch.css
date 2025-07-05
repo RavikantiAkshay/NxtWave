@@ -1,0 +1,823 @@
+ @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translate3d(0, 0, 0);
+            }
+            40%, 43% {
+                transform: translate3d(0, -8px, 0);
+            }
+            70% {
+                transform: translate3d(0, -4px, 0);
+            }
+            90% {
+                transform: translate3d(0, -2px, 0);
+            }
+        }
+        
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(208, 178, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(208, 178, 0, 0.6);
+            }
+        }
+        
+        .navbar {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            transform: translateY(-5px);
+        }
+        
+        .food-munch-logo {
+            width: 80px;
+            height: 70px;
+            transition: transform 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .food-munch-logo:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .navbar-nav .nav-link {
+            color: #323f4b !important;
+            font-family: "Roboto";
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .navbar-nav .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(45deg, #d0b200, #a58d00);
+            transition: width 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover::before {
+            width: 100%;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #d0b200 !important;
+            transform: translateY(-2px);
+        }
+        
+        .banner-section-bg-container {
+            background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner-section-bg-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+            z-index: 1;
+        }
+        
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .banner-heading {
+            color: white;
+            font-family: "Roboto";
+            font-size: 45px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slideInDown 1s ease-out 0.3s both;
+        }
+        
+        .banner-caption {
+            color: #f5f7fa;
+            font-family: "Roboto";
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .banner-buttons {
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+        
+        .custom-button {
+            color: white;
+            background: linear-gradient(45deg, #d0b200, #a58d00);
+            width: 130px;
+            height: 45px;
+            border: none;
+            border-radius: 25px;
+            margin-right: 10px;
+            font-family: "Roboto";
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(208, 178, 0, 0.3);
+        }
+        
+        .custom-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .custom-button:hover::before {
+            left: 100%;
+        }
+        
+        .custom-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(208, 178, 0, 0.5);
+            animation: glow 1s ease-in-out infinite;
+        }
+        
+        .custom-outline-button {
+            color: #d0b200;
+            background-color: transparent;
+            width: 130px;
+            height: 45px;
+            border: 2px solid #d0b200;
+            border-radius: 25px;
+            font-family: "Roboto";
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .custom-outline-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(45deg, #d0b200, #a58d00);
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+        
+        .custom-outline-button:hover::before {
+            width: 100%;
+        }
+        
+        .custom-outline-button:hover {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(208, 178, 0, 0.5);
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+        
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .wcu-section {
+            background: linear-gradient(135deg, #f9fbfe, #e8f4fd);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .wcu-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(208, 178, 0, 0.03) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .wcu-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .wcu-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .wcu-card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(229, 234, 244, 0.5);
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .wcu-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(208, 178, 0, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .wcu-card:hover::before {
+            opacity: 1;
+        }
+        
+        .wcu-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(208, 178, 0, 0.2);
+            border-color: #d0b200;
+        }
+        
+        .wcu-card-image {
+            width: 87px;
+            height: 90px;
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .wcu-card:hover .wcu-card-image {
+            transform: scale(1.1) rotate(5deg);
+            animation: bounce 1s ease;
+        }
+        
+        .wcu-card-title {
+            color: #323f4b;
+            font-family: "Roboto";
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .wcu-card-description {
+            color: #7b8794;
+            font-family: "Roboto";
+            font-size: 16px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .offers {
+            color: #d0b200;
+            font-style: italic;
+            font-weight: 600;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .explore-menu-section {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        }
+        
+        .menu-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        
+        .menu-item-card {
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            background: white;
+            border: 1px solid rgba(229, 234, 244, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .menu-item-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(208, 178, 0, 0.05), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .menu-item-card:hover::before {
+            opacity: 1;
+        }
+        
+        .menu-item-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(208, 178, 0, 0.15);
+        }
+        
+        .menu-item-image {
+            border-radius: 16px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-item-card:hover .menu-item-image {
+            transform: scale(1.05);
+        }
+        
+        .menu-card-title {
+            color: #323f4b;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 24px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .menu-item-link {
+            color: #d0b200;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item-link:hover {
+            color: #a58d00;
+            text-decoration: none;
+            transform: translateX(5px);
+        }
+        
+        .healthy-food-section {
+            background: linear-gradient(135deg, #f9fbfe, #e8f4fd);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .healthy-food-section-img {
+            width: 270px;
+            transition: transform 0.3s ease;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .healthy-food-section-img:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        
+        .healthy-food-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .healthy-food-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .delivery-and-payment-section {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        }
+        
+        .delivery-and-payment-section-img {
+            width: 270px;
+            transition: transform 0.3s ease;
+            animation: float 4s ease-in-out infinite 2s;
+        }
+        
+        .delivery-and-payment-section-img:hover {
+            transform: scale(1.05) rotate(-2deg);
+        }
+        
+        .delivery-and-payment-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .delivery-and-payment-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .payment-card-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 28px;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .payment-card-img:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .thanking-customers-section {
+            background: radial-gradient(circle at center, #fff8db, #fae38c);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .thanking-customers-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .thanking-customers-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .thanking-customers-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .thanking-customers-section-img {
+            width: 270px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            animation: float 5s ease-in-out infinite 1s;
+        }
+        
+        .thanking-customers-section-img:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+        
+        .thanking-customers-section-modal-title {
+            color: #d0b200;
+            font-weight: 800;
+        }
+        
+        .follow-us-section {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+        }
+        
+        .follow-us-section-heading {
+            text-align: center;
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        
+        .follow-us-icon-container {
+            background: linear-gradient(45deg, #faf7e8, #f5f2d6);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .follow-us-icon-container:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 10px 25px rgba(208, 178, 0, 0.3);
+            animation: bounce 1s ease;
+        }
+        
+        .icon {
+            color: #d0b200;
+            font-size: 35px;
+            transition: all 0.3s ease;
+        }
+        
+        .follow-us-icon-container:hover .icon {
+            color: #a58d00;
+            transform: rotate(360deg);
+        }
+        
+        .footer-section {
+            background: linear-gradient(135deg, #0d2436, #1a3a4a);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(208, 178, 0, 0.05) 0%, transparent 70%);
+        }
+        
+        .footer-section-mail-id {
+            color: #959ead;
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section-mail-id:hover {
+            color: #d0b200;
+        }
+        
+        .footer-section-address {
+            color: #959ead;
+            font-family: "Roboto";
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #d0b200, #a58d00);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(208, 178, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(208, 178, 0, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .banner-heading {
+                font-size: 35px;
+            }
+            
+            .banner-caption {
+                font-size: 18px;
+            }
+            
+            .wcu-section-heading,
+            .menu-section-heading,
+            .healthy-food-section-heading,
+            .delivery-and-payment-section-heading,
+            .thanking-customers-section-heading,
+            .follow-us-section-heading {
+                font-size: 24px;
+            }
+            
+            .healthy-food-section-img,
+            .delivery-and-payment-section-img,
+            .thanking-customers-section-img {
+                width: 200px;
+            }
+            
+            .follow-us-icon-container {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .icon {
+                font-size: 25px;
+            }
+        }
+
+        .modal {
+            z-index: 1050; 
+        }
+        
+        .modal-backdrop {
+            z-index: 1040; 
+        }
+        
+        .modal-content {
+            border-radius: 15px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-header {
+            background: linear-gradient(45deg, #fae38c, #fff8db);
+            border-bottom: none;
+            padding: 15px 20px;
+        }
+        
+        .modal-title {
+            color: #183b56;
+            font-weight: 700;
+        }
+        
+        .modal-body {
+            padding: 0;
+        }
+        
+        .modal-footer {
+            background-color: #f8f9fa;
+            border-top: none;
+            padding: 15px 20px;
+        }
+        
+        .modal-footer .btn-secondary {
+            background-color: #d0b200;
+            border-color: #d0b200;
+            color: white;
+        }
+        
+        .modal-footer .btn-secondary:hover {
+            background-color: #a58d00;
+            border-color: #a58d00;
+        }
+        
+        .close {
+            color: #183b56;
+            opacity: 1;
+            text-shadow: none;
+            transition: all 0.3s ease;
+        }
+        
+        .close:hover {
+            color: #d0b200;
+            transform: rotate(90deg);
+        }
