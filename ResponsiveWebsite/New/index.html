@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Ravikanti Portfolio</title>
+    <meta name="description" content="Presidential-Level Web Developer Portfolio">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/86aca8b955.js" crossorigin="anonymous"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="matrixCanvas" class="matrix-bg"></canvas>
+    
+    <nav id="mainNav" class="glass-effect">
+        <div class="container">
+            <div class="nav-brand text-3d">Akshay Ravikanti</div>
+            
+            <button id="mobileMenuBtn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Skills</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+        
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#portfolio" class="mobile-nav-link">Projects</a>
+            <a href="#services" class="mobile-nav-link">Skills</a>
+            <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <p class="subtitle">Hello, I'm a</p>
+                    <h1 class="title text-3d">WEB DEVELOPER</h1>
+                    <p class="description">
+                        Crafting digital experiences that push the boundaries of what's possible.
+                        Specializing in cutting-edge web technologies and immersive 3D interfaces.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn-primary pulse">View My Work</a>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png" alt="Developer">
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        
+        <div class="floating-orb blue"></div>
+        <div class="floating-orb purple" style="animation-delay: 1s;"></div>
+        <div class="floating-orb pink" style="animation-delay: 2s;"></div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title text-3d">ABOUT ME</h2>
+                <p class="section-subtitle">Mastering the art of digital craftsmanship</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" alt="About Me">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Facts About Me</h3>
+                    <p>
+                        My name is Akshay Ravikanti, and I am currently looking for a job
+                        in Frontend Development. I have 3 years of experience working as a Frontend Developer.
+                        I have a bachelor's degree in Electrical Engineering.
+                    </p>
+                    <p>
+                        I am a dedicated person with a family of four. I enjoy reading, and the knowledge and perspective that
+                        my reading have strengthened my teaching skills and presentation abilities.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="flip-up">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Problem Solving</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Team Collaboration</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4>Adaptability</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Time Management</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title text-3d">PROJECTS</h2>
+                <p class="section-subtitle">Projects I have done</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-project-1-img.png" alt="Project 1">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="category">Web Design</span>
+                        <h3>Royal Grand Hotel</h3>
+                        <p>
+                            Royal Grand Hotel is a Simple Static Website. We can use this layout for
+                            building other websites...
+                        </p>
+                        <a href="#" class="portfolio-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-project-2-img.png" alt="Project 2">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="category">Web Design</span>
+                        <h3>Happy Meals</h3>
+                        <p>
+                            Happy Meals is the best-in-class food ordering page today. With interactive
+                            UI/UX and simple call to actions...
+                        </p>
+                        <a href="#" class="portfolio-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-count="10">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-count="2800">0</h3>
+                        <p>Lines of Code</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter" data-count="15">0</h3>
+                        <p>Hours Worked</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title text-3d">SKILLS</h2>
+                <p class="section-subtitle">What I do</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png" alt="Web Design">
+                    </div>
+                    <h3>Static Websites</h3>
+                    <p>
+                        A Static Website contains Web pages with fixed content. Each page is developed using HTML
+                        and CSS and displays the same information to every visitor.
+                    </p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png" alt="Web Development">
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p>
+                        Responsive Web design is the approach that suggests that design and development should respond
+                        to the user's behaviour and environment based on screen size.
+                    </p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png" alt="Customization">
+                    </div>
+                    <h3>Customizable Layouts</h3>
+                    <p>
+                        Customisable sites are templates with set layouts. You may be able to change photos and colors, but your
+                        site will look similar to many other sites due to the template.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="techstack" class="services-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title text-3d">TECH STACK</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" alt="HTML5">
+                </div>
+                <h3>HTML5</h3>
+                <p>
+                    Semantic and accessible markup used to build structured, SEO-friendly websites and applications.
+                </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3">
+                </div>
+                <h3>CSS3</h3>
+                <p>
+                    Styled responsive layouts using Flexbox, Grid, and animations to enhance user experience.
+                </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <img src="https://img.icons8.com/color/96/000000/javascript--v1.png" alt="JavaScript">
+                </div>
+                <h3>JavaScript</h3>
+                <p>
+                    Built interactive and dynamic components using modern ES6+ syntax and browser APIs.
+                </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <img src="https://img.icons8.com/color/96/000000/react-native.png" alt="React">
+                </div>
+                <h3>React</h3>
+                <p>
+                    Created scalable frontends with reusable components, hooks, and state management using React.
+                </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <img src="https://img.icons8.com/color/96/000000/nodejs.png" alt="Node.js">
+                </div>
+                <h3>Node.js</h3>
+                <p>
+                    Developed backend logic and RESTful APIs with Express on Node.js runtime environment.
+                </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                    <img src="https://img.icons8.com/color/96/000000/mongodb.png" alt="MongoDB">
+                </div>
+                <h3>MongoDB</h3>
+                <p>
+                    Implemented flexible, NoSQL database solutions using MongoDB with Mongoose ODM.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title text-3d">TESTIMONIALS</h2>
+                <p class="section-subtitle">What clients say</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial active">
+                    <div class="testimonial-image">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-1-img.png" alt="Client 1">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+                            Akshay is one of the best hardworking developers, and it was a pleasure working with him.
+                            Having him on the project certainly made everything run smoother.
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Gautham</h4>
+                            <span>Founder of CocoPay Company</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-2-img.png" alt="Client 2">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+                            Akshay's attention to detail and problem-solving skills are exceptional. He delivered our project
+                            ahead of schedule with outstanding quality.
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Priya</h4>
+                            <span>CTO of TechSolutions Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-3-img.png" alt="Client 3">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+                            Working with Akshay was a game-changer for our startup. His frontend expertise transformed our
+                            user experience and increased our conversion rates by 40%.
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Rahul</h4>
+                            <span>CEO of Startup Innovations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title text-3d">CONTACT</h2>
+                <p class="section-subtitle">Get in touch</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>akshay.r@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 986543210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>17 Ayur Vigyan Nagar, New Delhi, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Akshay Ravikanti. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
